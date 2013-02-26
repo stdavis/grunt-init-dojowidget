@@ -1,0 +1,6 @@
+{
+    "name.js": "src/{%= path %}/{%= name %}.js",
+    "name.html": "src/{%= path %}/templates/{%= name %}.html",
+    "name.css": "src/{%= path %}/resources/{%= name %}.css",
+    "spec.js": "src/{%= testspath %}/spec/Spec{%= name %}.js"
+}

@@ -1,0 +1,26 @@
+{
+    "predef": [
+        "process",
+        "define",
+        "console",
+        "module",
+        "AGRC",
+        "dojo",
+        "require",
+        "describe",
+        "beforeEach",
+        "afterEach",
+        "it",
+        "expect",
+        "exports"
+    ],
+
+    "evil": true,
+    "regexdash": true,
+    "browser": true,
+    "wsh": true,
+    "sub": true,
+    "undef": true,
+    "unused": true,
+    "globalstrict": true
+}
