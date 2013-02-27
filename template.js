@@ -39,8 +39,6 @@ exports.template = function(grunt, init, done) {
   ], function (err, props) {
     // warn if overright
     var path = 'src/' + props.path + '/' + props.name + '.js';
-    console.log(path);
-    console.log(fs.existsSync(path));
     if (fs.existsSync(path)) {
       grunt.warn('There is already a widget located there!');
     }
