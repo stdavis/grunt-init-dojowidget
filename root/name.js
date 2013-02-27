@@ -14,6 +14,8 @@ function (
     template
     ) {
     "use strict";
+    // summary:
+    //      TODO
     return declare('{%= declareName %}', [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
         widgetsInTemplate: false,
         templateString: template,
