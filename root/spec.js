@@ -5,7 +5,6 @@ require([
 function (
     {%= name %}
     ) {
-    "use strict";
     describe('{%= path %}/{%= name %}', function () {
         var testWidget;
         beforeEach(function () {

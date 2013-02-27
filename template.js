@@ -13,6 +13,10 @@ exports.template = function(grunt, init, done) {
       message: "WidgetName"
     },
     {
+      name: 'description',
+      message: 'Widget Description'
+    },
+    {
       name: 'path',
       message: "Path/To/WidgetFolder (relative to current folder)",
       "default": 'app'
