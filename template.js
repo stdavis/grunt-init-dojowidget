@@ -26,6 +26,11 @@ exports.template = function(grunt, init, done) {
       message: "DojoDeclareName",
       "default": declareNameDefault
     },
+    {
+      name: 'widgetsInTemplate',
+      message: "Will the template contain other widgets?",
+      "default": "Y/n"
+    },
     { 
       name: 'baseclass',
       message: "base-css-class"
@@ -46,6 +51,9 @@ exports.template = function(grunt, init, done) {
     if (fs.existsSync(path)) {
       grunt.warn('There is already a widget located there!');
     }
+
+    props.widgetsInTemplate = /y/i.test(props.widgetsInTemplate);
+    console.log(props.widgetsInTemplate);
 
     // apply declareName default
     if (props.declareName === declareNameDefault) {
