@@ -14,3 +14,5 @@ To use:
 ```
 grunt-init dojowidget
 ```
+
+Note: All files are created in the `src/` directory. Works well with the [dojo-boilerplate](https://github.com/csnover/dojo-boilerplate) folder structure.
