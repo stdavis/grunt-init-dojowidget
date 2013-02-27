@@ -10,6 +10,7 @@ function (
         var testWidget;
         beforeEach(function () {
             testWidget = new {%= name %}();
+            testWidget.startup();
         });
         afterEach(function () {
             testWidget = null;
