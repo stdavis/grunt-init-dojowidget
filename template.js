@@ -38,7 +38,7 @@ exports.template = function(grunt, init, done) {
     {
       name: 'maincssfile',
       message: "Main.css that the @import will be added to",
-      "default": 'app/resources/app.css'
+      "default": 'app/resources/App.css'
     },
     {
       name: 'testspath',
@@ -53,7 +53,6 @@ exports.template = function(grunt, init, done) {
     }
 
     props.widgetsInTemplate = /y/i.test(props.widgetsInTemplate);
-    console.log(props.widgetsInTemplate);
 
     // apply declareName default
     if (props.declareName === declareNameDefault) {
