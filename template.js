@@ -5,7 +5,7 @@ exports.notes = "";
 
 exports.template = function(grunt, init, done) {
   var fs = require('fs');
-  var declareNameDefault = 'app.<WidgetName>';
+  var declareNameDefault = 'app/<WidgetName>';
 
   init.process({}, [
     {
@@ -56,7 +56,7 @@ exports.template = function(grunt, init, done) {
 
     // apply declareName default
     if (props.declareName === declareNameDefault) {
-      props.declareName = 'app.' + props.name;
+      props.declareName = 'app/' + props.name;
     }
     // Files to copy (and process).
     var files = init.filesToCopy(props);
