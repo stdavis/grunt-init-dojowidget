@@ -23,8 +23,6 @@ function (
 
         constructor: function () {
             console.log(this.declaredClass + "::constructor", arguments);
-
-            this.inherited(arguments);
         },
         postCreate: function () {
             // summary:
