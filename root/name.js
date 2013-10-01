@@ -3,7 +3,7 @@ define([
     'dijit/_WidgetBase', 
     'dijit/_TemplatedMixin', 
     'dijit/_WidgetsInTemplateMixin',
-    'dojo/text!{%= path %}/templates/{%= name %}.html'
+    'dojo/text!./templates/{%= name %}.html'
 ],
 
 function (
