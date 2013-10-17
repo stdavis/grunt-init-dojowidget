@@ -1,29 +1,31 @@
 require([
     '{%= path %}/{%= name %}',
-    'dojo/dom-construct',
-    'dojo/_base/window'
 
-],
+    'dojo/_base/window',
 
-function (
+    'dojo/dom-construct'
+
+], function(
     {%= name %},
+
     domConstruct,
+
     win
-    ) {
-    describe('{%= path %}/{%= name %}', function () {
+) {
+    describe('{%= path %}/{%= name %}', function() {
         var testWidget;
-        var destroy = function (widget) {
+        var destroy = function(widget) {
             widget.destroyRecursive();
             widget = null;
         };
-        beforeEach(function () {
+        beforeEach(function() {
             testWidget = new {%= name %}({}, domConstruct.create('div', {}, win.body()));
             testWidget.startup();
         });
-        afterEach(function () {
+        afterEach(function() {
             destroy(testWidget);
         });
-        it('create a valid object', function () {
+        it('create a valid object', function() {
             expect(testWidget).toEqual(jasmine.any({%= name %}));
         });
     });
