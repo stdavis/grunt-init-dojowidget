@@ -18,7 +18,7 @@ define([
 ) {
     // summary:
     //      {%= description %}
-    return declare('{%= declareName %}', [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
+    return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
         widgetsInTemplate: {%= widgetsInTemplate %},
         templateString: template,
         baseClass: '{%= baseclass %}',
