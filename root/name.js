@@ -16,6 +16,7 @@ define([
     _TemplatedMixin,
     _WidgetsInTemplateMixin
 ) {
+    'use strict';
     // summary:
     //      {%= description %}
     return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
@@ -24,14 +25,14 @@ define([
         baseClass: '{%= baseclass %}',
 
         constructor: function() {
-            console.log(this.declaredClass + '::constructor', arguments);
+            console.log('{%= path %}/{%= name %}:constructor', arguments);
 
             this.inherited(arguments);
         },
         postCreate: function() {
             // summary:
             //      dom is ready
-            console.log(this.declaredClass + '::postCreate', arguments);
+            console.log('{%= path %}/{%= name %}:postCreate', arguments);
 
             this.inherited(arguments);
         }
