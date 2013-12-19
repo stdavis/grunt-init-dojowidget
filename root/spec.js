@@ -12,7 +12,6 @@ require([
 
     win
 ) {
-    'use strict';
     describe('{%= path %}/{%= name %}', function() {
         var testWidget;
         var destroy = function(widget) {

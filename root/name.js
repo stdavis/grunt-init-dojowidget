@@ -16,7 +16,6 @@ define([
     _TemplatedMixin,
     _WidgetsInTemplateMixin
 ) {
-    'use strict';
     // summary:
     //      {%= description %}
     return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
