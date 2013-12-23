@@ -8,9 +8,9 @@ require([
 ], function(
     {%= name %},
 
-    domConstruct,
+    win,
 
-    win
+    domConstruct
 ) {
     describe('{%= path %}/{%= name %}', function() {
         var testWidget;
